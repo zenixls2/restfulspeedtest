@@ -8,7 +8,7 @@ This project is still in its early stages, and only one simple case is tested.
 ### Test Environment
 All the tests are run using
 ```bash
-wrk -c50 -d10s -t50 http://localhost:8080
+wrk --latency -t12 -d10s -c100 http://localhost:8080/
 ```
 on top of a MacBook Pro (Retina, 13-inch, Early 2015).
 
@@ -21,3 +21,5 @@ Golang - fasthttp + fasthttprouter
 Nodejs - cluster + http core
 Python - gevent.WSGIServer + multiprocess
 Scala - Akka
+Rust - mioco
+Rust - Iron

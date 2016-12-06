@@ -1,0 +1,8 @@
+[package]
+name = "rustmiocotest"
+version = "0.1.0"
+authors = ["(Zenix) Han-Sheng Huang <hansheng.huang@aperza.biz>"]
+
+[dependencies]
+mioco = "*"
+httparse = "*"
