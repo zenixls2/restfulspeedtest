@@ -16,10 +16,10 @@ Due to lack of NUMA and other Linux specific libraries' support,
 some frameworks or libraries such as Facebook proxygen still cannot be tested. Plan to re-run the whole project using a ubuntu Docker image in the future, or using some EC2 instances to run the test
 
 ### Supported Frameworks / Languages
-Dart - isolate + Stream
-Golang - fasthttp + fasthttprouter
-Nodejs - cluster + http core
-Python - gevent.WSGIServer + multiprocess
-Scala - Akka
-Rust - mioco
-Rust - Iron
+ * Dart - isolate + Stream
+ * Golang - fasthttp + fasthttprouter
+ * Nodejs - cluster + http core
+ * Python - gevent.WSGIServer + multiprocess
+ * Scala - Akka
+ * Rust - mioco
+ * Rust - Iron
