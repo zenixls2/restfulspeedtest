@@ -1,0 +1,9 @@
+hosts:
+    "localhost":
+        listen:
+            port: 8080
+        paths:
+            "/":
+                mruby.handler: |
+                    lambda { return [200, {}, ["hello"]] }
+
