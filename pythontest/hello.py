@@ -12,10 +12,10 @@ def application(env, start_response):
         print env['PATH_INFO']
 listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 listener.bind(('', 8080))
-listener.listen(4)
+listener.listen(8)
 def serve_forever(listener):
     WSGIServer(listener, application, spawn=Pool(), log=None).serve_forever()
-number_of_processes = 4
+number_of_processes = 8
 for i in range(number_of_processes):
     Process(target=serve_forever, args=(listener,)).start()
 
