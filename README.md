@@ -22,8 +22,9 @@ some frameworks or libraries such as Facebook proxygen still cannot be tested. P
  * Dart 1.22.1 - isolate + Stream
  * Golang 1.8 - fasthttp + fasthttprouter
  * Nodejs 7.6.0 - cluster + http core
- * Python2.17.13 - gevent.WSGIServer + multiprocess
- * Python3.6.0 - sanic (httptools + uvloop + asyncio)
+ * Python 2.17.13 - gevent.WSGIServer + multiprocess
+ * Python 3.6.0 - sanic (httptools + uvloop + asyncio)
+ * Pypy 5.7.0 - gevent.WSGIServer + multiprocess
  * Scala - Akka
  * Rust 1.15.1 - mioco
  * Rust 1.15.1 - Iron
