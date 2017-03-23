@@ -15,7 +15,6 @@ def serve_multiple(server_settings, workers, stop_event=None):
     signal_func(SIGINT, lambda s, f: stop_event.set())
     signal_func(SIGTERM, lambda s, f: stop_event.set())
     processes = []
-    processes = []
     for _ in range(workers):
       process = Process(target=sanic.server.serve, kwargs=server_settings)
       process.daemon = True
