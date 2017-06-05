@@ -29,3 +29,4 @@ some frameworks or libraries such as Facebook proxygen still cannot be tested. P
  * Rust 1.15.1 - mioco
  * Rust 1.15.1 - Iron
  * C - lwan
+ * Groovy (Java) - Spring Boot 1.5.3
