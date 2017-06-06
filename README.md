@@ -18,6 +18,8 @@ merged into asyncio. However, uvloop still outperforms. See [Issue #26081](http:
 Due to lack of NUMA and other Linux specific libraries' support,
 some frameworks or libraries such as Facebook proxygen still cannot be tested. Plan to re-run the whole project using a ubuntu Docker image in the future, or using some EC2 instances to run the test.
 
+For some languages with JIT implementation, the cold-start time should be considered. We should run at least 3 times of tests beforehand to warm-up the service.
+
 ### Supported Frameworks / Languages
  * Dart 1.22.1 - isolate + Stream
  * Golang 1.8 - fasthttp + fasthttprouter
