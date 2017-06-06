@@ -25,7 +25,7 @@ some frameworks or libraries such as Facebook proxygen still cannot be tested. P
  * Python 2.17.13 - gevent.WSGIServer + multiprocess
  * Python 3.6.0 - sanic (httptools + uvloop + asyncio)
  * Pypy 5.7.0 - gevent.WSGIServer + multiprocess
- * Scala - Akka
+ * Scala 2.12.2 - Akka
  * Rust 1.15.1 - mioco
  * Rust 1.15.1 - Iron
  * C - lwan
