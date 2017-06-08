@@ -33,7 +33,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * C - lwan
  * Groovy (Java) - Spring Boot 1.5.3
 
-### Test Comparison
+### Test Comparison (Requests/sec)
  * darttest:                32682.07
  * gotest:                71763.95
  * groovyspringboosttest:                27803.93
@@ -45,3 +45,29 @@ For some languages with JIT implementation, the cold-start time should be consid
  * rustmiocotest:                72021.24
  * rusttest:                45998.79
  * scalatest:                52146.17
+
+### Average Latency
+ * darttest: 13.75ms
+ * gotest: 1.33ms
+ * groovyspringboosttest: 4.58ms
+ * h2otest: 1.89ms
+ * nodetest: 3.23ms
+ * pypytest: 3.04k
+ * python3test: 2.70ms
+ * pythontest: 2.48k
+ * rustmiocotest: 1.33ms
+ * rusttest: 645.02us
+ * scalatest: 7.32ms
+
+### Max Latency
+ * darttest: 169.23ms
+ * gotest: 17.19ms
+ * groovyspringboosttest: 220.43ms
+ * h2otest: 155.39ms
+ * nodetest: 127.19ms
+ * pypytest: 7.75k
+ * python3test: 36.16ms
+ * pythontest: 9.25k
+ * rustmiocotest: 14.58ms
+ * rusttest: 30.88ms
+ * scalatest: 498.91ms
