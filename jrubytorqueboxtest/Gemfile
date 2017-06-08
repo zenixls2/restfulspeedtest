@@ -1,0 +1,3 @@
+source "http://rubygems.org"
+
+gem "torquebox", "4.0.0.beta3"

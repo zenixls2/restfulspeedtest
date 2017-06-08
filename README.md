@@ -32,12 +32,14 @@ For some languages with JIT implementation, the cold-start time should be consid
  * Rust 1.15.1 - Iron
  * C - lwan
  * Groovy (Java) - Spring Boot 1.5.3
+ * JRuby - Torquebox 4.0.0 Beta3
 
 ### Test Comparison (Requests/sec)
  * darttest:                32682.07
  * gotest:                71763.95
  * groovyspringboosttest:                27803.93
  * h2otest:                53921.95
+ * jrubytorqueboxtest:                35189.56
  * nodetest:                45577.53
  * pypytest:                15204.38
  * python3test:                38492.04
@@ -51,6 +53,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * gotest: 1.33ms
  * groovyspringboosttest: 4.58ms
  * h2otest: 1.89ms
+ * jrubytorqueboxtest: 2.73ms
  * nodetest: 3.23ms
  * pypytest: 3.04k
  * python3test: 2.70ms
@@ -64,6 +67,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * gotest: 17.19ms
  * groovyspringboosttest: 220.43ms
  * h2otest: 155.39ms
+ * jrubytorqueboxtest: 29.00ms
  * nodetest: 127.19ms
  * pypytest: 7.75k
  * python3test: 36.16ms
