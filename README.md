@@ -32,3 +32,16 @@ For some languages with JIT implementation, the cold-start time should be consid
  * Rust 1.15.1 - Iron
  * C - lwan
  * Groovy (Java) - Spring Boot 1.5.3
+
+### Test Comparison
+ * darttest:                32682.07
+ * gotest:                71763.95
+ * groovyspringboosttest:                27803.93
+ * h2otest:                53921.95
+ * nodetest:                45577.53
+ * pypytest:                15204.38
+ * python3test:                38492.04
+ * pythontest:                10025.78
+ * rustmiocotest:                72021.24
+ * rusttest:                45998.79
+ * scalatest:                52146.17
