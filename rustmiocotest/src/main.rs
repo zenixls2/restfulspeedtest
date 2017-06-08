@@ -52,7 +52,8 @@ fn main() {
                             if res.is_complete() {
                                 match req.path {
                                     Some("/") => {
-                                        let _ = try!(conn.write_all(&RESPONSE.as_bytes()));
+                                        let _ = try!(conn.write_all(
+                                            &RESPONSE.as_bytes()));
                                         buf_i = 0
                                     }
                                     Some(&_) => {
