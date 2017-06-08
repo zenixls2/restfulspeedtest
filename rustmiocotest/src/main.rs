@@ -48,7 +48,7 @@ fn main() {
                             unsafe {
                                 prev = from_raw_parts(ptr, buf_i);
                             }
-                            let res = req.parse(&*prev).unwrap();
+                            let res = req.parse(prev).unwrap();
                             if res.is_complete() {
                                 match req.path {
                                     Some("/") => {
