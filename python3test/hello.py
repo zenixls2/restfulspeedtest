@@ -32,15 +32,13 @@ def serve_multiple(server_settings, workers, stop_event=None):
     asyncio.get_event_loop().stop()
 
 def run(self, host="127.0.0.1", port=8000, debug=False, before_start=None,
-            after_start=None, before_stop=None, after_stop=None, ssl=None,
-            sock=None, workers=1, loop=None, protocol=HttpProtocol,
-            backlog=100, stop_event=None, register_sys_signals=True):
+            ssl=None, sock=None, workers=1, protocol=HttpProtocol,
+            backlog=100, stop_event=None, register_sys_signals=True,
+            log_config=None):
     server_settings = self._helper(
-        host=host, port=port, debug=debug, before_start=before_start,
-        after_start=after_start, before_stop=before_stop,
-        after_stop=after_stop, ssl=ssl, sock=sock, workers=workers,
-        loop=loop, protocol=protocol, backlog=backlog,
-        stop_event=stop_event, register_sys_signals=register_sys_signals)
+        host=host, port=port, debug=debug, ssl=ssl, sock=sock,
+        workers=workers, protocol=protocol, backlog=backlog,
+        register_sys_signals=register_sys_signals, has_log=False)
 
     try:
         self.is_running = True
@@ -62,7 +60,7 @@ from sanic.response import text
 
 Sanic.run = run
 
-app = Sanic(__name__)
+app = Sanic(__name__, log_config=False)
 
 @app.route("/")
 async def test(request):
