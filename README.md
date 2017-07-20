@@ -25,7 +25,8 @@ For some languages with JIT implementation, the cold-start time should be consid
  * Golang 1.8 - fasthttp + fasthttprouter
  * Nodejs 7.6.0 - cluster + http core
  * Python 2.17.13 - gevent.WSGIServer + multiprocess
- * Python 3.6.0 - sanic (httptools + uvloop + asyncio)
+ * Python 3.6.1 - sanic 0.5.4 (httptools + uvloop + asyncio)
+ * Python 3.6.1 - aiohttp 2.2.3
  * Pypy 5.7.0 - gevent.WSGIServer + multiprocess
  * Scala 2.12.2 - Akka
  * Rust 1.15.1 - mioco
@@ -42,6 +43,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest:                35189.56
  * nodetest:                45577.53
  * pypytest:                15204.38
+ * python3aiohttptest:                 6738.47
  * python3test:                38492.04
  * pythontest:                10025.78
  * rustmiocotest:                72021.24
@@ -56,6 +58,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest: 2.73ms
  * nodetest: 3.23ms
  * pypytest: 3.04k
+ * python3aiohttptest: 14.95ms
  * python3test: 2.70ms
  * pythontest: 2.48k
  * rustmiocotest: 1.33ms
@@ -70,6 +73,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest: 29.00ms
  * nodetest: 127.19ms
  * pypytest: 7.75k
+ * python3aiohttptest: 76.05ms
  * python3test: 36.16ms
  * pythontest: 9.25k
  * rustmiocotest: 14.58ms
