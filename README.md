@@ -29,8 +29,8 @@ For some languages with JIT implementation, the cold-start time should be consid
  * Python 3.6.1 - aiohttp 2.2.3
  * Pypy 5.7.0 - gevent.WSGIServer + multiprocess
  * Scala 2.12.2 - Akka
- * Rust 1.15.1 - mioco
- * Rust 1.15.1 - Iron
+ * Rust 1.19.0 - mioco 0.8.1
+ * Rust 1.19.0 - Iron 0.5.1
  * C - lwan
  * Groovy (Java) - Spring Boot 1.5.3
  * JRuby - Torquebox 4.0.0 Beta3
@@ -46,8 +46,8 @@ For some languages with JIT implementation, the cold-start time should be consid
  * python3aiohttptest:                 6738.47
  * python3test:                38492.04
  * pythontest:                10025.78
- * rustmiocotest:                72021.24
- * rusttest:                45998.79
+ * rustmiocotest:                73404.16
+ * rusttest:                42359.07
  * scalatest:                52146.17
 
 ### Average Latency
@@ -61,8 +61,8 @@ For some languages with JIT implementation, the cold-start time should be consid
  * python3aiohttptest: 14.95ms
  * python3test: 2.70ms
  * pythontest: 2.48k
- * rustmiocotest: 1.33ms
- * rusttest: 645.02us
+ * rustmiocotest: 1.30ms
+ * rusttest: 725.99us
  * scalatest: 7.32ms
 
 ### Max Latency
@@ -76,6 +76,6 @@ For some languages with JIT implementation, the cold-start time should be consid
  * python3aiohttptest: 76.05ms
  * python3test: 36.16ms
  * pythontest: 9.25k
- * rustmiocotest: 14.58ms
- * rusttest: 30.88ms
+ * rustmiocotest: 3.88ms
+ * rusttest: 8.96ms
  * scalatest: 498.91ms
