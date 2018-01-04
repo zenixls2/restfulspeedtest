@@ -1,10 +1,11 @@
 import socket
 import sanic
-from sanic.log import log
+from sanic.log import logger
 from sanic.server import HttpProtocol
 from multiprocessing import Process, Event
 from signal import SIGTERM, SIGINT
 from signal import signal as signal_func
+import asyncio
 
 # patch to allow pre-sock binding to cope with sock reuse 
 # performance issue (lock) in processes
@@ -34,11 +35,11 @@ def serve_multiple(server_settings, workers, stop_event=None):
 def run(self, host="127.0.0.1", port=8000, debug=False, before_start=None,
             ssl=None, sock=None, workers=1, protocol=HttpProtocol,
             backlog=100, stop_event=None, register_sys_signals=True,
-            log_config=None):
+            access_log=True):
     server_settings = self._helper(
         host=host, port=port, debug=debug, ssl=ssl, sock=sock,
         workers=workers, protocol=protocol, backlog=backlog,
-        register_sys_signals=register_sys_signals, has_log=False)
+        register_sys_signals=register_sys_signals, access_log=access_log)
 
     try:
         self.is_running = True
@@ -47,11 +48,11 @@ def run(self, host="127.0.0.1", port=8000, debug=False, before_start=None,
         else:
             serve_multiple(server_settings, workers, stop_event)
     except:
-        log.exception(
+        logger.exception(
             'Experienced exception while trying to serve')
     finally:
         self.is_running = False
-    log.info("Server Stopped")
+    logger.info("Server Stopped")
 
 sanic.server.serve_multiple = serve_multiple
 
@@ -72,4 +73,4 @@ listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
 listener.bind(('0.0.0.0', 8080))
 listener.listen(6)
 
-app.run(host=None, port=None, sock=listener, debug=False, workers=6)
+app.run(host=None, port=None, sock=listener, debug=False, workers=6, access_log=False)

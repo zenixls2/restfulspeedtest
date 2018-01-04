@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cat ./README_top.md
+
 echo "### Test Comparison (Requests/sec)"
 for f in *; do
 	if [[ -f "$f/result" ]]; then
