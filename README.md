@@ -43,7 +43,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest:                35189.56
  * nodetest:                35412.58
  * pypytest:                15204.38
- * python3aiohttptest:                 6738.47
+ * python3aiohttptest:                 7592.93
  * python3test:                28413.94
  * pythontest:                10025.78
  * rustmiocotest:                73404.16
@@ -58,7 +58,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest: 2.73ms
  * nodetest: 5.23ms
  * pypytest: 3.04k
- * python3aiohttptest: 14.95ms
+ * python3aiohttptest: 12.64ms
  * python3test: 5.12ms
  * pythontest: 2.48k
  * rustmiocotest: 1.30ms
@@ -73,7 +73,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * jrubytorqueboxtest: 29.00ms
  * nodetest: 127.98ms
  * pypytest: 7.75k
- * python3aiohttptest: 76.05ms
+ * python3aiohttptest: 61.07ms
  * python3test: 128.05ms
  * pythontest: 9.25k
  * rustmiocotest: 3.88ms
