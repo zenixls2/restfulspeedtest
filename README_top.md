@@ -34,4 +34,5 @@ For some languages with JIT implementation, the cold-start time should be consid
  * C - lwan
  * Groovy (Java) - Spring Boot 1.5.3
  * JRuby - Torquebox 4.0.0 Beta3
+ * PHP 7.2 - swoole
 
