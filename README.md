@@ -43,7 +43,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * h2otest:                53921.95
  * jrubytorqueboxtest:                35189.56
  * nodetest:                35412.58
- * phpswooletest:                49782.14
+ * phpswooletest:                51156.86
  * pypytest:                15204.38
  * python3aiohttptest:                 7592.93
  * python3test:                28413.94
@@ -59,7 +59,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * h2otest: 1.89ms
  * jrubytorqueboxtest: 2.73ms
  * nodetest: 5.23ms
- * phpswooletest: 16.19ms
+ * phpswooletest: 17.35ms
  * pypytest: 3.04k
  * python3aiohttptest: 12.64ms
  * python3test: 5.12ms
@@ -75,7 +75,7 @@ For some languages with JIT implementation, the cold-start time should be consid
  * h2otest: 155.39ms
  * jrubytorqueboxtest: 29.00ms
  * nodetest: 127.98ms
- * phpswooletest: 309.03ms
+ * phpswooletest: 251.90ms
  * pypytest: 7.75k
  * python3aiohttptest: 61.07ms
  * python3test: 128.05ms
